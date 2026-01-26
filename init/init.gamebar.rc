@@ -7,8 +7,8 @@ on boot
     chmod 0660 /sys/class/drm/sde-crtc-0/measured_fps
 
     # Battery temperature path (adjust paths)
-    chown system system /sys/class/power_supply/battery/temp
-    chmod 0660 /sys/class/power_supply/battery/temp
+    chown system system /sys/class/thermal/thermal_zone79/temp
+    chmod 0660 /sys/class/thermal/thermal_zone79/temp
     
     
     # GPU paths (adjust paths)
@@ -22,5 +22,4 @@ on boot
     # RAM frequency path (adjust paths)
     chown system system /sys/devices/system/cpu/bus_dcvs/DDR/cur_freq
     chmod 0660 /sys/devices/system/cpu/bus_dcvs/DDR/cur_freq
-    
-    
+
